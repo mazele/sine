@@ -777,13 +777,13 @@
 ## The sqlite file in which to store notebook signatures. By default, this will
 #  be in your Jupyter data directory. You can set it to ':memory:' to disable
 #  sqlite writing to the filesystem.
-c.NotebookNotary.data_dir = './'
+c.NotebookNotary.db_file = 'nbnotary_db'
 
 ## The secret key with which notebooks are signed.
 #c.NotebookNotary.secret = b''
 
 ## The file where the secret key is stored.
-#c.NotebookNotary.secret_file = ''
+c.NotebookNotary.secret_file = 'nbnotary_secret'
 
 ## A callable returning the storage backend for notebook signatures. The default
 #  uses an SQLite database.
